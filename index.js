@@ -3,11 +3,11 @@ var theme_count = 1;
 function change() {
     theme_count = theme_count + 1;
     if (theme_count % 2 == 0) {
-        document.getElementById("dark").src = "../images/icons8-day-and-night-50.png";
+        document.getElementById("dark").src = "icons8-day-and-night-50.png";
         document.body.classList.toggle("dark-theme");
     }
     else {
-        document.getElementById("dark").src = "../images/icons8-day-and-night-50.png";
+        document.getElementById("dark").src = "icons8-day-and-night-50.png";
         document.body.classList.toggle("dark-theme");
     }
 }
