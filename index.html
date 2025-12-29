@@ -9,17 +9,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <script src="..\JS files\index.js"></script>
-    <link rel="icon" type="image/x-icon" href="..\images\Maruthi logo.png">
+    <script src="index.js"></script>
+    <link rel="icon" type="image/x-icon" href="Maruthi logo.png">
+    <style>
+        .grid-container9{
+            display: grid;
+            /* height: 100vh; */
+            /* border: 2px solid red; */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 2fr 6fr 4fr 4fr 8fr 4fr 4fr 4fr 2fr; */
+            grid-template-areas: "navbar9 navbar9 navbar9 navbar9"
+                                "details9 details9 photo9 photo9"
+                                "about9 about9 about9 about9"
+                                "myprojects9 myprojects9 myprojects9 myprojects9"
+                                "tech9 tech9 tech9 tech9"
+                                "exp9 exp9 exp9 exp9"
+                                "contact9 contact9 contact9 contact9"
+                                "form9 form9 form9 form9"
+                                "apps9 apps9 apps9 apps9"
+                                ;
+            gap: 5px;
+        }
+        .box9{
+            /* border: 2px solid red; */
+        }
+
+        #navbar9{
+            grid-area: navbar9;
+        }
+
+        #details9{
+            grid-area: details9;
+        }
+
+        #photo9{
+            grid-area: photo9;
+        }
+
+        #about9{
+            grid-area: about9;
+        }
+
+        #myprojects9{
+            grid-area: myprojects9;
+        }
+
+        #tech9{
+            grid-area: tech9;
+        }
+
+        #exp9{
+            grid-area: exp9;
+        }
+
+        #contact9{
+            grid-area: contact9;
+        }
+
+        #form9{
+            grid-area: form9;
+        }
+
+        #apps9{
+            grid-area: apps9;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main_div">
-        <div class="header">
+    <div class="grid-container9">
+        <div class="box9" id="navbar9">
+            <div class="header">
             <header>
                 <nav id="nav1">
                     <img src="Maruthi logo.png" alt="maruthi logo" height="70px" width="auto" id="mylogo">
-                    <p style="margin-top: 18px; margin-left: -7px; color: rgba(40, 38, 38, 0.682); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">aruthi</p>
+                    <p style="margin-top: 18px; margin-left: -7px; color: rgba(40, 38, 38, 0.682); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nese Maruthi</p>
                     <ul type="none" id="navtype">
                         <li><a href="#myinfo1">ABOUT</a></li>
                         <li><a href="#p">PROJECTS</a></li>
@@ -32,11 +96,12 @@
                 </nav>
             </header>
         </div>
-        <div class="hero">
+        </div>
+        <div class="box9" id="details9">
             <div class="cont">
                 <h1><span>I'm &nbsp;&nbsp;</span> <span id="myname"><span id="fname">Nese</span> Maruthi</span></h1><br>
                 <small>
-                    <p id="smallabout">This is my official portfolio website to showcase my all works related to web
+                    <p id="smallabout">This is my official portfolio website to showcase my<br> all works related to web
                         development and UI design.</p>
                 </small><br>
                 <!-- <button class="cvbutton">Download CV</button> -->
@@ -59,11 +124,14 @@
                 <a href="https://wa.me/qr/2ZQ6LUCICY73L1" target="_blank"><img src="icons8-whatsapp-50.png"
                         alt="whatsapp"></a><br>
             </div>
+        </div>
+        <div class="box9" id="photo9">
             <div class="myimage">
                 <img src="Maruthi image.webp" alt="my image" class="profile_pic">
             </div>
-        </div><br><br><br><br><br>
-        <div class="about_me" id="myinfo1">
+        </div>
+        <div class="box9"id="about9">
+            <div class="about_me" id="myinfo1">
             <center>
                 <h1 class="ab">About</h1>
             </center><br><br>
@@ -78,8 +146,9 @@
                 in areas like cybersecurity, cloud computing, and generative AI. Looking forward to connecting,
                 learning, and contributing to exciting tech projects!</p>
         </div>
-        <br><br>
-        <div class="my_projects">
+        </div>
+        <div class="box9" id="myprojects9">
+            <div class="my_projects">
             <center>
                 <h1 class="ab" id="p">My Projects</h1>
             </center>
@@ -121,15 +190,11 @@
                 </li>
             </ul>
         </div>
-
-
-
-
-
-        <center>
-            <h1 id="myskillset">Technologies Known</h1>
-        </center>
-        <div class="skills">
+        </div>
+        <div class="box9" id="tech9"><div class="skills">
+            <center>
+                <h1 id="myskillset">Technologies Known</h1>
+            </center>
             <div class="skillsmain">
                 <div class="container">
                     <div class="skill"><img src="icons8-html-5-50.png" alt="HTML logo" class="skill_logo">
@@ -188,13 +253,9 @@
                 </div>
 
             </div>
-        </div>
-
-
-
-
-
-        <div class="services">
+        </div></div>
+        <div class="box9" id="exp9">
+            <div class="services">
             <center>
                 <center>
                     <h1 id="myexperience">My Experience</h1>
@@ -233,19 +294,14 @@
                 </div>
             </center>
         </div>
-        <marquee direction="down" height="60px">
+        </div>
+        <div class="box9" id="contact9">
+            <marquee direction="down" height="60px">
             <div class="contact_me">
                 <p id="contact_me">Contact Me</span></p>
             </div>
         </marquee>
-        <div class="footer" style="font-family:'Courier New', Courier, monospace;">
-            <br><br>
-            <center>
-                <h1>Nese Maruthi</h1>
-            </center>
-            <br>
-            <div class="div3" style="display: flex; flex-wrap: wrap; border: none; margin-top: -20px;">
-                <div class="div1" style="width: 50%; border: none; padding-top: 30px;">
+            <div class="div1" style="width: 50%; border: none; padding-top: 30px;">
                     <ul id="footnav">
                         <li><a href="#myinfo1">About</a></li>
                         <li><a href="#p">Projects</a></li>
@@ -263,7 +319,9 @@
                             title="Click to contact Nese Maruthi">+91 8897978594</a>
                     </div>
                 </div>
-                <div class="div2" style="border: none;">
+        </div>
+        <div class="box9" id="form9">
+            <div class="div2" style="border: none;">
                     <center>
                         <div class="contactm" style="border: none;">
                             <form action="https://api.web3forms.com/submit" method="POST" onsubmit="clearForm(event)">
@@ -292,7 +350,8 @@
                         </div>
                     </center>
                 </div>
-            </div>
+        </div>
+        <div class="box9" id="apps9">
             <div id="social_icons">
                 <a href="https://www.facebook.com/profile.php?id=100039740496463" target="_blank"><img
                         src="icons8-facebook-50.png" alt="facebook"></a>
@@ -310,8 +369,10 @@
             <center><samp><small>
                         <p>&copy; 2024 Nese Maruthi. All rights reserved.</p>
                         <p>Built with HTML, CSS & JavaScript</p>
-                    </small></samp></center>
-            <!-- </div> -->
+                    </small>
+                </samp>
+                
+            </center>
         </div>
     </div>
 </body>
