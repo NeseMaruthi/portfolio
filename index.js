@@ -40,3 +40,4 @@ function clearForm(event) {
             alert('There was an error sending your message. Please try again.');
         });
 }
+
