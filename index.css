@@ -516,7 +516,7 @@ margin-bottom: 70px;
 
 
 
-@media (max-width:768px){
+@media (max-width:586px){
     #photo9{
         display: none;
     }
@@ -543,3 +543,4 @@ margin-bottom: 70px;
         margin-left: 100px;
     }
 }
+
